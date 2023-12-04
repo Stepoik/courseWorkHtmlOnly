@@ -1,0 +1,172 @@
+@import "../base_styles.css";
+
+main{
+    display: grid;
+    padding-top: 33px;
+    padding-left: 220px;
+    padding-right: 170px;
+    grid-auto-rows: auto;
+    column-gap: 75px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "path ."
+        "photo title"
+        "photo attrs"
+        "photo attrs"
+        "photo attrs"
+        "photo_box item_info"
+        ;
+}
+.path a{
+    text-decoration: none;
+    color: #4F4F4F;
+    grid-area: path;
+}
+.photo{
+    grid-area: photo;
+}
+.title{
+    position: relative;
+    grid-area: title;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(128, 128, 128);
+}
+.title_text{
+    color: rgb(128, 128, 128);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.type_text{
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.item_photo{
+    transform: translateX(-50px);
+    width: 100%;
+}
+
+.attrs{
+    grid-area: attrs;
+}
+.color_selector{
+    position: relative;
+}
+.color_selector::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 1px;
+    background: rgb(128, 128, 128);
+}
+.item_params{
+    position: relative;
+}
+.item_params::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(128, 128, 128);
+}
+
+.price{
+    grid-area: price;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 13px;
+}
+.contact{
+    cursor: pointer;
+    display: flex;
+    background: #66A9CB;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+.photo_box{
+    grid-area: photo_box;
+}
+.photo_box img{
+    width: 100%;
+}
+.questions{
+    color: rgb(128, 128, 128);
+}
+.item_info{
+    grid-area: item_info;
+}
+.info_selector{
+    display: flex;
+    justify-content: space-between;
+}
+.info_selector div{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 20px;
+    flex-shrink: 0;
+    color: #545454;
+}
+.info_selector .selected{
+    background-color: #5A92AF;
+    border-radius: 25px;
+    color: white;
+}
+@media screen and (max-width: 1400px){
+    .item_photo{
+        transform: initial;
+    }
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .item_photo{
+        transform: initial;
+        width: 100%;
+    }
+    main {
+        justify-items: center;
+        padding: 0;
+        grid-auto-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "path"
+        "title"
+        "photo"
+        "attrs"
+        "item_info"
+        "photo_box"
+    }
+    .attrs{
+        justify-self: start;
+        padding-left: 20px;
+    }
+    .contacts{
+        grid-template-rows: auto auto;
+    }
+    .info_selector div{
+        overflow: scroll;
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="df764efa-0edc-47bc-b11e-416984fbe39c" name="kurs" url="http://192.168.1.5">
+        <fileTransfer mountedRoot="C:\Users\user\WebstormProjects\courseWorkHtmlOnly" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,54 @@
+@import "../base_styles.css";
+
+
+main{
+    display: grid;
+    padding-top: 33px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+.path a{
+    text-decoration: none;
+    color: #4F4F4F;
+    grid-area: path;
+}
+
+h1{
+    position: relative;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(128, 128, 128);
+}
+
+.stages{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    text-align: center;
+}
+.stage h2{
+    color: #66A9CB;
+}
+.stage img{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px){
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    .stages{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

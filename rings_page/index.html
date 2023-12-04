@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Кольца с отпечатком</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div></div>
-        <a class="navigation">Помолвочные кольца</a>
-        <a class="navigation">Обручальные кольца</a>
-        <a><img src="../images/Logotype.svg" alt="Hello"></a>
-        <a class="navigation">Ювелирные украшения</a>
-        <a class="navigation">На заказ</a>
-        <div></div>
+        <div class="menu">
+            <div></div>
+            <div class="navigation-box"><a class="navigation"  href="../assortment/assortment.html">Помолвочные кольца</a></div>
+            <div class="navigation-box"><a class="navigation" href="#">Обручальные кольца</a></div>
+            <a class="logo" href="../assortment/assortment.html"><img src="../images/Logotype.svg" alt="Hello"></a>
+            <div class="navigation-box"><a class="navigation" href="#">Ювелирные украшения</a></div>
+            <div class="navigation-box"><a class="navigation" href="#">На заказ</a></div>
+            <div></div>
+        </div>
+        <div class="burger_menu">
+            <input id="toggle" type="checkbox">
+            <div class="burger_logo">
+                <label for="toggle">
+                    <img src="../images/burger.png" class="burger_button"/>
+                </label>
+                <a class="logo" href="../assortment/assortment.html"><img src="../images/Logotype.svg" alt="Hello"></a>
+                <a/>
+            </div>
+            <div class="menubox">
+                <div class="navigation-box"><a class="navigation"  href="../assortment/assortment.html">Помолвочные кольца</a></div>
+                <div class="navigation-box"><a class="navigation" href="#">Обручальные кольца</a></div>
+                <div class="navigation-box"><a class="navigation" href="#">Ювелирные украшения</a></div>
+                <div class="navigation-box"><a class="navigation" href="#">На заказ</a></div>
+            </div>
+        </div>
     </header>
     <main>
-        <a class="path">Главная > Кольца с отпечатком</a>
+        <span class="path"><a href="#">Главная</a> > <a href="#">Кольца с отпечатком</a></span>
         <h1 class="article_title">
             Кольца с отпечатком
         </h1>
@@ -25,7 +47,7 @@
             <img src="../images/ruby.png" class="example">
             <img src="../images/ruby.png" class="example">
         </div>
-        <div>
+        <div class="main_info">
             <p>
                 Обручальные кольца с отпечатками пальцев молодоженов – это не просто оригинальные кольца, но и отличная возможность наглядно продемонстрировать глубину Ваших взаимных чувств.
             </p>
@@ -46,29 +68,30 @@
     <footer>
         <div class="links">
             <a>помолвочные кольца</a>
+            <a href="../rings_page/index.html">кольца с отпечатком</a>
+            <a>студия</a>
+            <a>Гарантии</a>
             <a>ТОП 10 помолвочных</a>
-            <a>обручальные кольца</a>
+            <a>Кольца с гравировкой</a>
+            <a href="../team/team.html">команда</a>
+            <a>faq</a>
+            <a>обручальные кольца </a>
+            <a>Ювелирные украшения</a>
+            <a href="../crafting/crafting.html">Изготовление</a>
+            <a>контакты</a>
             <a>топ 10 Обручальных</a>
-            <a>помолвочные кольца</a>
-            <a>ТОП 10 помолвочных</a>
-            <a>обручальные кольца</a>
-            <a>топ 10 Обручальных</a>
-            <a>помолвочные кольца</a>
-            <a>ТОП 10 помолвочных</a>
-            <a>обручальные кольца</a>
-            <a>топ 10 Обручальных</a>
-            <a>помолвочные кольца</a>
-            <a>ТОП 10 помолвочных</a>
-            <a>обручальные кольца</a>
-            <a>топ 10 Обручальных</a>
+            <a>укарашения на заказ</a>
+            <a>о бриллиантах</a>
         </div>
         <div class="info">
-            <div class="address"><img src="../images/ic_location.svg">г.Москва, ул. Большой Тишинский переулок, д. 8с2
-            <p>info@diamondlake.ru</p></div>
-            <div class="phone"><img src="../images/ic_phone.svg">+7 495 142 67 93</div>
+            <div class="address"><img src="../images/ic_location.svg">г.Красногорск, Ильинский б-р, д. 5
+                <p>holop300@gmail.com</p></div>
+            <div class="phone"><img src="../images/ic_phone.svg">+7 929 593 02 34</div>
             <div class="slogan">«Даря любимому человеку украшение, вы дарите частичку своей души»</div>
             <div class="small-logo"><img src="../images/Logotype.svg"></div>
             <div class="socials"></div>
+            <div class="group">ИКБО-20-22</div>
+            <div class="name">Горохов Степан Валерьевич</div>
         </div>
     </footer>
 </body>

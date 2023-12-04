@@ -1,47 +1,5 @@
-body{
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-}
+@import "../base_styles.css";
 
-.navigation{
-    min-height: 100%;
-    position: relative;
-    color: #66A9CB;
-    align-items: center;
-}
-.navigation::before{
-    position: absolute;
-    height: 2px;
-    content: "";
-    width:0;
-    top: 0;
-    left: 0;
-    background: #66A9CB;
-    transition: width 0.3s;
-}
-.navigation::after{
-    position: absolute;
-    height: 2px;
-    content: "";
-    width:0;
-    bottom: 0;
-    left: 0;
-    background: #66A9CB;
-    transition: width 0.3s;
-}
-.navigation:hover::before{
-    width: 100%;
-}
-.navigation:hover::after{
-    width: 100%;
-}
 main{
     grid-area: main;
     width: 80%;
@@ -59,14 +17,14 @@ main{
     content: "";
     bottom: 0;
     left: 0;
-    height: 4px;
+    height: 2px;
     background-color: #4F4F4F;
     width: 100%;
 }
-.path{
-    color: #4F4F4F;
+.path a{
     text-decoration: none;
-    font-size: 12px;
+    color: #4F4F4F;
+    grid-area: path;
 }
 .examples{
     display: grid;
@@ -77,59 +35,8 @@ main{
     width: 100%;
     height: 100%;
 }
-header{
-    grid-area: header;
-    display: flex;
-    min-width: 100%;
-    justify-content: space-between;
-}
 
-footer{
-    width: 100%;
-}
 
-.links a{
-    text-transform: uppercase;
-    font-size: 12px;
-    color: white;
-}
-.links{
-    display: grid;
-    justify-items: center;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    row-gap: 26px;
-    column-gap: 130px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    background-color: #66A9CB;
-}
-
-.info{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    padding-left: 30px;
-    grid-template-areas:
-        "address slogan socials"
-        "phone small_logo socials";
-}
-
-.address{
-    grid-area: address;
-    justify-self: start;
-}
-.phone{
-    grid-area: phone;
-    justify-self: start;
-}
-.slogan{
-    grid-area: slogan;
-}
-.socials{
-    grid-area: socials;
-}
-.small-logo{
-    grid-area: small_logo;
+.main_info{
+    font-family: 'IBM Plex Sans', sans-serif;
 }
