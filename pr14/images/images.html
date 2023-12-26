@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        p{
+            padding: 10px;
+
+        }
+        .selected{
+            background-color: aquamarine;
+        }
+        .files{
+            background-color: azure;
+            width: 200px;
+        }
+        .file{
+            cursor: default;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .bucket{
+            min-height: 100px;
+            min-width: 200px;
+            background-color: antiquewhite;
+            margin-right: 100px;
+        }
+        .slider{
+            margin-top: 40px;
+            position: relative;
+            width: 200px;
+            height: 20px;
+            background-color: gray;
+        }
+        .slider_item{
+            position:absolute;
+            width: 20px;
+            height: 40px;
+            background-color: aquamarine;
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://w.forfun.com/fetch/da/daf8eb568fea522f6701fb9c66378cdc.jpeg" class="main"/>
+        <div style="display: flex" class="galery">
+            <img src="https://w.forfun.com/fetch/da/daf8eb568fea522f6701fb9c66378cdc.jpeg">
+            <img src="https://kartinkof.club/uploads/posts/2022-09/1662431382_14-kartinkof-club-p-novie-i-krasivie-kartinki-puma-20.jpg">
+            <img src="https://w.forfun.com/fetch/b4/b4ee94aa20bd9af0dafd3b4d62332c08.jpeg">
+        </div>
+        <div style="display: flex; margin-top: 100px">
+            <div class="bucket">
+
+            </div>
+            <div class="files">
+                <p class="file">Файл 1</p>
+                <p class="file">Файл 2</p>
+                <p class="file">Файл 3</p>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider_item"/>
+        </div>
+    </div>
+    <script src="images.js"></script>
+</body>
+</html>
